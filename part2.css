@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.all {
+	width: 100%;
+	height: 740px;
+	background-color: gray;
+}
+#axure,#ps,#html,#css,#js {
+	height: 145px;
+	width: 1080px;
+	margin: 0 auto;
+	border: solid 1px #fff000;
+	line-height: 145px;
+	text-indent: 48px;
+	font-size: 48px;
+}
+
+.axure,.ps,.html,.css,.js {
+	width: 300px;
+	text-align: right;
+	
+}
+#axure div,#ps div,#html div,#css div,#js div {
+	float: left;
+}
+
+#j {
+
+	width: 780px;
+	height: 145px;
+}
+
+#axure { 
+	background-color: red;	
+}
+
+#ps {
+	background-color: orange;
+}
+
+#html {
+	background-color: yellow;
+}
+
+#css { 
+	background-color: green;
+}
+
+#js {
+	background-color: blue;
+}
