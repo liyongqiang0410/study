@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<style>
+
+		.all {
+			margin: 0 auto;
+			width: 600px;
+			height: 560px;
+			background-color: fuchsia;
+		}
+		/*#zhuce {
+			padding-bottom: 36px;
+
+		}*/
+		.top {
+			
+			margin-top: 24px;
+			padding-left: 12px;
+		
+		}
+		#yinli {
+			width: 92px;
+			height: 22px;
+		}
+		p {
+			margin-left: 68px;
+		}
+		#p {
+			margin-left: 75px;
+		}
+		#lijizhuce {
+			background-color: fuchsia;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<form>
+			<div id="zhuce">
+				<h4>注册账号</h4>
+				<hr>
+			</div>
+				<div class="top">
+
+					昵 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp称 
+					<input type="text" autofocus=""  name="" class="text" size="40">
+				</div>
+				<div class="top">
+					密 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码
+					<input type="password" autofocus="" name="" class="text" size="40">
+				</div>
+				<div class="top">
+					确认密码
+					<input type="password" autofocus="" name="" class="text" size="40">
+				</div>
+				<div class="top">
+					性 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别
+					<input type="radio" id="male" name="gender" checked="rure" >
+					<label for="male">男</label>
+					<input type="radio" id="female" name="gender" >
+					<label for="female">女</label><br>
+				</div>
+				<div class="top">
+					生 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp日
+					<select name="city" id="yinli" size="5" >
+						<option value="公历">公历</option>
+						<option value="阴历" >阴历</option>
+					</select>
+					<select name="年" id="yinli" size="1">
+						<option value="1990">1990</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+						<option value="1999" selected="">1999</option>
+					</select>
+					<select name="月" id="yinli" size="1">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12" selected="">12</option>
+					</select>
+					<select name="日" id="yinli" size="1">
+						<option value="" selected="">1日</option>
+						<option value="">2日</option>
+						<option value="">3日</option>
+						<option value="">4日</option>
+						<option value="">5日</option>
+						<option value="">6日</option>
+						<option value="">7日</option>
+						<option value="">8日</option>
+						<option value="">9日</option>
+						<option value="">10日</option>
+						<option value="">11日</option>
+						<option value="">12日</option>
+						<option value="">13日</option>
+						<option value="">14日</option>
+						<option value="">15日</option>
+						<option value="">16日</option>
+						<option value="">17日</option>
+						<option value="">18日</option>
+						<option value="">19日</option>
+						<option value="">20日</option>
+						<option value="">21日</option>
+						<option value="">22日</option>
+						<option value="">23日</option>
+						<option value="">24日</option>
+						<option value="">25日</option>
+						<option value="">26日</option>
+						<option value="">27日</option>
+						<option value="">28日</option>
+						<option value="">29日</option>
+						<option value="">30日</option>
+						<option value="">31日</option>
+					</select>
+				</div>
+				<div class="top">
+					所 在 地&nbsp&nbsp
+					<select name="省" id="yinli">
+						<option value="">山西</option>
+						<option value="">江西</option>
+						<option value="">江苏</option>
+						<option value="" selected="">北京</option>
+						<option value=""></option>
+					</select>
+					<select name="市" id="yinli">
+						<option value="">太原</option>
+						<option value="">宜春</option>
+						<option value="">苏州</option>
+						<option value="" selected="">北京</option>
+						<option value=""></option>
+					</select>
+					<select name="地" id="yinli">
+						<option value="">太原</option>
+						<option value="">丰城</option>
+						<option value="">昆山</option>
+						<option value="" selected=""></option>
+						<option value=""></option>
+					</select>
+				</div>
+				<div class="top">
+					手机号码
+					<input type="text" type="text" name=""  maxlength="11">
+				</div>
+				<div class="top">
+					<p>可通过该手机号快速找回你的账号<br>
+					中国大陆以外的手机<a href="">点击这里</a></p>
+				</div>	
+				<input type="submit" name="" value="立即注册" style="margin-left: 80px;" id="lijizhuce">
+				<div id="p">
+					<input type="checkbox" name="qq空间" id="p10" checked="">
+					<label for="p10">同时开通QQ空间<br></label>
+					
+					<input type="checkbox" name="条款" id="p11" checked="">
+					<label for="p11">已阅读并同意相关条款和隐私政策</label>
+					
+				</div>
+		</form>
+	</div>
+</body>
+</html>

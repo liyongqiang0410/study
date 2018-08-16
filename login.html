@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<style type="text/css">
+		.all {
+			border: solid ;
+			width: 600px;
+			height: 350px;
+			margin: 120px auto 0;
+			background-color:white;
+		}
+		.top {
+			margin-top: 24px;
+			padding-left: 12px;
+		}
+		.selectdown {
+			width: 173px;
+			height: 24px;
+		}
+		#shenfengzheng {
+			width: 169px;
+			height: 18px;
+		}
+		#down {
+			margin-top: 24px;
+			margin-left: 170px;
+			
+		}
+		h3 {
+			    margin-top: -15px;
+    background-color: white;
+    width: 75px;
+    margin-left: 12px;
+		}
+	</style>
+</head>
+<body>
+	<div class="all" >
+		<form action="#">
+			<h3>考生登录</h3>
+		
+				<div class="top">
+					<tr >
+						<td>真实姓名:</td>
+						<td><input type="text" name="名字" size="22" autofocus="ture" maxlength="22"> </td>
+					</tr>
+				</div>
+				<div class="top">
+					<tr >
+						<td>证件类型:</td>
+						<td>
+							<select name="证件类型" class="selectdown" >
+									<option value="身份证" selected="selected" style="height: 24px">身份证</option>
+									<option value="学生证" >学生证</option>
+							</select>
+						</td>
+					</tr>
+				</div>
+
+				<div class="top">
+					<tr >
+						<td>证件号码:</td>
+						<td>
+							<input type="tel"  name="zhengjianao" id="shenfengzheng" pattern="[0-9]{18}">
+						</td>
+					</tr>
+				</div>
+				
+				<div class="top">
+					<tr >
+						<td>报名序号:</td>
+						<td> 
+							<input type="tel"  name="baoming" id="shenfengzheng" pattern="[0-9]{12}">
+						</td>
+					</tr>
+				</div>
+				
+				<div class="top">
+					<tr >
+						<td>校 验 码:&nbsp&nbsp   </td>
+						<td><input type="tel"  name="jiaoyan" id="shenfengzheng" pattern="[0-9]{4}"></td>
+					</tr>
+					<br>
+				</div>	
+				<div id="down">
+					<tr>
+						<button >登录</button>
+						<button  >找回报名序列</button>
+					</tr>
+				</div>
+		</form>		
+	</div>
+</body>
+</html>

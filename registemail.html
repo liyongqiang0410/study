@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>registemail</title>
+	<style>
+	.all {
+		width: 480px;
+		height: 240px;
+		/*border: solid 1px gray;*/
+		margin: auto;
+		
+	}
+	#form {
+		margin-top: 200px;
+	}
+	#up {
+		background-color: gray;
+		opacity: 0.8;
+	}
+	#yanzhengma {
+		font-weight: bold;
+		text-indent: 24px;
+	}
+	#huan {
+		font-weight: 600;
+		text-indent: 24px;
+		font-size: 14px;
+		padding-right: 30px;
+	}
+	.down {
+		width: 480px;
+		height: 70px;
+	}
+	#submit {
+		width: 90px;
+		height: 22px;
+		margin: 26px auto 0;
+	}
+	#outsubmit {
+		height: 76px;
+		width: 467px;
+		border: solid 1px gray;
+		background-color: gray;
+		
+	}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<form action="#" method="get" id="form" >
+	   <!-- action提交给某个页面处理表单数据 login.action login.PHP
+			method 提交方式
+					get ？key=value 查询字符串 不安全 明文 大小限制 1024字节
+					post 安全 大小不限
+			name 表单名
+			enctype 编码格式
+					application/x-www...默认
+					multipart/form-data 传输文件 
+					text/plain 空格变加号 -->
+		<!-- 
+		form 表单空间
+			input 
+				type
+					text
+					password
+					submit
+					file
+					radio
+					CheckBox
+					hidden
+					image
+					button
+					reset
+				name
+					radio CheckBox name值一样 其他不能一样
+				value 
+					radio CheckBox必须写value值  否则提交默认为on
+					按钮显示为其内容
+					其他默认 可提交
+					disable 禁用 不会提交 
+					readonly 只读
+					checked 默认选择 radio CheckBox可用-->
+
+			<table id="up">
+					<tr>
+						<td> &nbsp&nbsp&nbsp&nbsp*邮箱</td>
+						<td>
+							<input type="text" name="email" autofocus placeholder="请使用邮箱登录">
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>使用手机注册 </td>
+					</tr>
+					<tr>
+						<td>&nbsp&nbsp&nbsp&nbsp*设置密码</td>
+						<td>
+							<input type="password" name="password" pattern="[0]">
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp&nbsp&nbsp&nbsp*官方注册微博名</td>
+						<td>
+							<input type="text" name="zuzhi" placeholder="请参考组织/企业/品牌">
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp&nbsp&nbsp&nbsp*所在地</td>
+						<td>
+			<!--
+			 select
+
+			 	name 代表下拉菜单提交的key值
+			 		option 必须有value值 
+			 		size 代表长度
+			 		multiple  多选
+			 		<option value=" "> <option>
+							 否则提交为空
+						selected 默认选中
+						label 
+							for 指向要选中的id值
+							 -->
+			 <!--
+				button 提交功能
+					type
+						submit 又提交功能
+						reset 重置
+			   -->
+							<select style="height: 24.5px;">
+								<option>
+									山西
+								</option>
+							</select>
+							<select style="height: 24.5px;">
+								<option>
+									太原
+								</option>
+							</select>
+
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp&nbsp&nbsp&nbsp*验证码</td>
+						<td>
+							<input type="text" name="yanzhengma">
+						</td>
+						<td id="yanzhengma">
+							f7r9
+						</td>
+						<td id="huan">
+							换一换
+						</td>	
+					</tr>
+					
+			</table>
+			<div id="outsubmit">
+				<div id="submit">
+					<input type="submit" name="" value="立即注册" >
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
